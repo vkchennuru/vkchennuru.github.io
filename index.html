@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Dr. Venkata Krishnaveni Chennuru — CS Faculty, IQAC Coordinator & OER Creator, SKR & SKR GCW(A), Kadapa"/>
+<title>Dr. Venkata Krishnaveni Chennuru | CS Faculty Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  /* Core palette — warm white + deep indigo + vivid teal */
+  --white:    #ffffff;
+  --bg:       #f7f8fc;
+  --bg2:      #eef0f8;
+  --bg3:      #e6e9f4;
+  --surface:  #ffffff;
+  --border:   #dde1f0;
+  --border2:  #c8cde6;
+
+  /* Text */
+  --ink:      #0f1535;
+  --ink2:     #2d3561;
+  --ink3:     #5a6285;
+  --ink4:     #8b91b0;
+
+  /* Accent — indigo */
+  --indigo:   #3b4fd8;
+  --indigo2:  #2a3bb8;
+  --indigo3:  #eceffe;
+  --indigo4:  #d6dafc;
+
+  /* Accent — teal */
+  --teal:     #0891b2;
+  --teal2:    #0e7490;
+  --teal3:    #e0f5f9;
+  --teal4:    #cbeef5;
+
+  /* Accents */
+  --amber:    #d97706;
+  --amber2:   #fef3c7;
+  --amber3:   #fde68a;
+  --rose:     #e11d48;
+  --rose2:    #fce7ee;
+  --violet:   #7c3aed;
+  --violet2:  #ede9fe;
+  --green:    #059669;
+  --green2:   #d1fae5;
+
+  /* Shadows */
+  --sh1: 0 1px 4px rgba(15,21,53,0.06), 0 4px 16px rgba(15,21,53,0.07);
+  --sh2: 0 4px 24px rgba(15,21,53,0.10), 0 8px 40px rgba(15,21,53,0.08);
+  --sh3: 0 8px 48px rgba(59,79,216,0.12), 0 2px 8px rgba(15,21,53,0.08);
+
+  --r:  12px;
+  --r2: 16px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.7;
+  font-size:16px;
+}
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--bg2);}
+::-webkit-scrollbar-thumb{background:var(--indigo4);border-radius:3px;}
+
+/* ── NAV ── */
+.nav{
+  position:sticky;top:0;z-index:900;
+  background:rgba(255,255,255,0.96);
+  backdrop-filter:blur(16px);
+  border-bottom:2px solid var(--indigo);
+  padding:0 48px;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 2px 20px rgba(59,79,216,0.08);
+}
+.nav-logo{display:flex;align-items:center;gap:13px;text-decoration:none;}
+.nav-mono{
+  width:44px;height:44px;border-radius:11px;
+  background:linear-gradient(135deg,var(--indigo),var(--teal));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Playfair Display',serif;font-size:19px;font-weight:700;
+  color:#fff;letter-spacing:-0.5px;
+  box-shadow:0 4px 14px rgba(59,79,216,0.3);
+}
+.nav-name{
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:700;
+  color:var(--ink);
+}
+.nav-sub{
+  font-family:'JetBrains Mono',monospace;font-size:9px;
+  color:var(--indigo);letter-spacing:1.8px;text-transform:uppercase;margin-top:1px;
+}
+.nav-links{display:flex;gap:3px;}
+.nav-a{
+  font-size:14px;font-weight:600;
+  padding:7px 15px;border-radius:8px;
+  color:var(--ink3);text-decoration:none;
+  border:none;background:transparent;cursor:pointer;
+  transition:all 0.18s;
+}
+.nav-a:hover{color:var(--indigo);background:var(--indigo3);}
+.nav-a.active{color:var(--white);background:var(--indigo);}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,#fff 0%,var(--indigo3) 50%,#f0f4ff 100%);
+  padding:72px 48px 60px;
+  border-bottom:1px solid var(--border);
+  position:relative;overflow:hidden;
+}
+.hero-decor1{
+  position:absolute;top:-100px;right:-80px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(59,79,216,0.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-decor2{
+  position:absolute;bottom:-80px;left:15%;
+  width:350px;height:350px;border-radius:50%;
+  background:radial-gradient(circle,rgba(8,145,178,0.07) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 280px;gap:56px;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-tag{
+  font-family:'JetBrains Mono',monospace;font-size:12px;
+  letter-spacing:2px;text-transform:uppercase;
+  color:var(--indigo);margin-bottom:18px;
+  display:flex;align-items:center;gap:10px;font-weight:600;
+}
+.hero-tag::before{content:'';width:32px;height:2px;background:var(--indigo);border-radius:2px;}
+.hero-h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(38px,5vw,60px);
+  line-height:1.1;color:var(--ink);
+  margin-bottom:12px;letter-spacing:-0.5px;
+}
+.hero-h1 em{font-style:italic;color:var(--indigo);}
+.hero-role{font-size:18px;font-weight:700;color:var(--ink2);margin-bottom:6px;}
+.hero-inst{font-size:15px;color:var(--ink3);margin-bottom:28px;font-weight:500;}
+.hero-chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px;}
+.chip{
+  font-size:13px;font-weight:600;
+  padding:6px 16px;border-radius:30px;
+  border:1.5px solid;
+}
+.chip-indigo{background:var(--indigo3);color:var(--indigo);border-color:var(--indigo4);}
+.chip-teal  {background:var(--teal3);color:var(--teal2);border-color:var(--teal4);}
+.chip-amber {background:var(--amber2);color:var(--amber);border-color:var(--amber3);}
+.chip-rose  {background:var(--rose2);color:var(--rose);border-color:#fbb6c8;}
+.chip-violet{background:var(--violet2);color:var(--violet);border-color:#c4b5fd;}
+.chip-green {background:var(--green2);color:var(--green);border-color:#6ee7b7;}
+
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-hero-primary{
+  font-size:15px;font-weight:700;
+  padding:13px 28px;border-radius:10px;border:none;cursor:pointer;
+  background:var(--indigo);color:#fff;
+  box-shadow:0 6px 20px rgba(59,79,216,0.35);
+  transition:all 0.2s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-hero-primary:hover{background:var(--indigo2);transform:translateY(-2px);box-shadow:0 10px 28px rgba(59,79,216,0.4);}
+.btn-hero-outline{
+  font-size:15px;font-weight:700;
+  padding:13px 28px;border-radius:10px;cursor:pointer;
+  background:#fff;color:var(--indigo);
+  border:2px solid var(--indigo);
+  transition:all 0.2s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-hero-outline:hover{background:var(--indigo3);transform:translateY(-2px);}
+.btn-hero-teal{
+  font-size:15px;font-weight:700;
+  padding:13px 28px;border-radius:10px;border:none;cursor:pointer;
+  background:var(--teal);color:#fff;
+  box-shadow:0 6px 20px rgba(8,145,178,0.3);
+  transition:all 0.2s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-hero-teal:hover{background:var(--teal2);transform:translateY(-2px);}
+
+/* Hero profile card */
+.hero-card{
+  background:#fff;border:1px solid var(--border2);
+  border-radius:var(--r2);padding:30px 24px;
+  text-align:center;box-shadow:var(--sh3);
+  position:relative;overflow:hidden;
+}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--indigo),var(--teal),var(--violet));
+}
+.hc-avatar{
+  width:96px;height:96px;border-radius:50%;
+  background:linear-gradient(135deg,var(--indigo),var(--teal));
+  display:flex;align-items:center;justify-content:center;
+  font-size:42px;margin:8px auto 18px;
+  box-shadow:0 8px 28px rgba(59,79,216,0.22);
+  border:4px solid #fff;
+}
+.hc-name{
+  font-family:'Playfair Display',serif;font-size:16px;font-weight:700;
+  color:var(--ink);margin-bottom:3px;
+}
+.hc-dept{font-size:13px;color:var(--ink3);margin-bottom:18px;font-weight:500;}
+.hc-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px;
+}
+.hc-stat{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:10px;padding:10px 8px;
+}
+.hc-n{
+  font-family:'Playfair Display',serif;font-size:24px;font-weight:700;
+  color:var(--indigo);line-height:1;
+}
+.hc-l{font-size:11px;color:var(--ink3);margin-top:2px;font-weight:600;}
+.hc-orcid{
+  display:block;
+  font-family:'JetBrains Mono',monospace;font-size:10.5px;
+  color:var(--teal);background:var(--teal3);
+  border:1.5px solid var(--teal4);
+  padding:8px 12px;border-radius:8px;
+  text-decoration:none;font-weight:600;letter-spacing:0.3px;
+}
+.hc-orcid:hover{background:var(--teal4);}
+
+/* ── STATS BAR ── */
+.statsbar{
+  background:#fff;border-bottom:1px solid var(--border);
+  padding:22px 48px;
+  box-shadow:0 2px 8px rgba(15,21,53,0.04);
+}
+.statsbar-inner{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;
+}
+.scard{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--r);padding:16px 14px;text-align:center;
+  transition:all 0.22s;border-top:3px solid transparent;cursor:default;
+}
+.scard:hover{transform:translateY(-4px);box-shadow:var(--sh2);}
+.scard.si{border-top-color:var(--indigo);}
+.scard.st{border-top-color:var(--teal);}
+.scard.sa{border-top-color:var(--amber);}
+.scard.sr{border-top-color:var(--rose);}
+.scard.sv{border-top-color:var(--violet);}
+.scard.sg{border-top-color:var(--green);}
+.sc-ico{font-size:20px;margin-bottom:5px;}
+.sc-n{
+  font-family:'Playfair Display',serif;font-size:32px;font-weight:700;
+  line-height:1;margin-bottom:5px;
+}
+.scard.si .sc-n{color:var(--indigo);}
+.scard.st .sc-n{color:var(--teal);}
+.scard.sa .sc-n{color:var(--amber);}
+.scard.sr .sc-n{color:var(--rose);}
+.scard.sv .sc-n{color:var(--violet);}
+.scard.sg .sc-n{color:var(--green);}
+.sc-l{font-size:12px;color:var(--ink3);font-weight:600;line-height:1.3;}
+
+/* ── MAIN ── */
+.main{max-width:1100px;margin:0 auto;padding:52px 48px 100px;}
+
+/* OER Banner */
+.oer-band{
+  background:linear-gradient(135deg,var(--indigo3),var(--teal3));
+  border:1.5px solid var(--indigo4);
+  border-radius:var(--r2);padding:22px 28px;margin-bottom:56px;
+  display:flex;align-items:center;gap:20px;
+  box-shadow:var(--sh1);
+}
+.oer-ico{
+  width:52px;height:52px;flex-shrink:0;
+  border-radius:13px;background:#fff;
+  border:1.5px solid var(--indigo4);
+  display:flex;align-items:center;justify-content:center;font-size:24px;
+  box-shadow:var(--sh1);
+}
+.oer-h{
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:700;
+  color:var(--ink);margin-bottom:4px;
+}
+.oer-p{font-size:14px;color:var(--ink3);line-height:1.6;font-weight:500;}
+.oer-p a{color:var(--indigo);text-decoration:none;font-weight:700;}
+.oer-p a:hover{text-decoration:underline;}
+
+/* ── SECTION ── */
+.section{margin-bottom:64px;}
+.sec-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:26px;padding-bottom:16px;
+  border-bottom:2px solid var(--bg3);
+  position:relative;
+}
+.sec-head::after{
+  content:'';position:absolute;bottom:-2px;left:0;
+  width:56px;height:3px;background:var(--indigo);border-radius:2px;
+}
+.sec-ttl{
+  font-family:'Playfair Display',serif;font-size:26px;font-weight:700;
+  color:var(--ink);display:flex;align-items:center;gap:12px;
+}
+.sec-ico{font-size:26px;}
+.sec-badge{
+  font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;
+  background:var(--indigo3);color:var(--indigo);
+  border:1.5px solid var(--indigo4);
+  padding:4px 12px;border-radius:6px;
+}
+.sec-filters{display:flex;gap:7px;flex-wrap:wrap;}
+.filt{
+  font-size:13px;font-weight:600;
+  padding:6px 16px;border-radius:8px;
+  border:1.5px solid var(--border2);
+  background:#fff;color:var(--ink3);
+  cursor:pointer;transition:all 0.15s;
+}
+.filt:hover,.filt.on{background:var(--indigo);color:#fff;border-color:var(--indigo);}
+
+/* ── CARD GRIDS ── */
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px;}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:20px;}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;}
+
+/* ── BASE CARD ── */
+.card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r2);padding:26px;
+  box-shadow:var(--sh1);transition:all 0.22s;
+  position:relative;overflow:hidden;
+}
+.card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--indigo);transform:scaleX(0);transform-origin:left;
+  transition:transform 0.25s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh2);}
+.card:hover::after{transform:scaleX(1);}
+.card.ta::after{background:var(--amber);}
+.card.tv::after{background:var(--violet);}
+.card.tr::after{background:var(--rose);}
+.card.tt::after{background:var(--teal);}
+.card.tg::after{background:var(--green);}
+
+.card-ico{font-size:32px;margin-bottom:13px;display:block;}
+.cbadge{
+  display:inline-block;
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;
+  padding:4px 11px;border-radius:5px;margin-bottom:12px;border:1.5px solid;
+}
+.cb-indigo{background:var(--indigo3);color:var(--indigo);border-color:var(--indigo4);}
+.cb-teal  {background:var(--teal3);color:var(--teal2);border-color:var(--teal4);}
+.cb-amber {background:var(--amber2);color:var(--amber);border-color:var(--amber3);}
+.cb-violet{background:var(--violet2);color:var(--violet);border-color:#c4b5fd;}
+.cb-rose  {background:var(--rose2);color:var(--rose);border-color:#fbb6c8;}
+.cb-green {background:var(--green2);color:var(--green);border-color:#6ee7b7;}
+
+.card-title{
+  font-family:'Playfair Display',serif;font-size:18px;font-weight:700;
+  color:var(--ink);margin-bottom:6px;line-height:1.3;
+}
+.card-sub{
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  color:var(--ink4);letter-spacing:0.5px;margin-bottom:10px;font-weight:500;
+}
+.card-desc{font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:16px;font-weight:500;}
+.card-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px;}
+.tag{
+  font-size:12px;font-weight:600;padding:4px 11px;border-radius:6px;
+  background:var(--bg2);color:var(--ink3);border:1px solid var(--border);
+}
+.card-acts{display:flex;gap:9px;flex-wrap:wrap;}
+.btn-c{
+  font-size:13px;font-weight:700;
+  padding:9px 18px;border-radius:8px;border:none;cursor:pointer;
+  transition:all 0.18s;text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-primary-c{background:var(--indigo);color:#fff;box-shadow:0 3px 10px rgba(59,79,216,0.25);}
+.btn-primary-c:hover{background:var(--indigo2);}
+.btn-outline-c{background:#fff;color:var(--indigo);border:2px solid var(--indigo4);}
+.btn-outline-c:hover{background:var(--indigo3);border-color:var(--indigo);}
+.btn-ghost-c{background:var(--bg2);color:var(--ink3);border:1px solid var(--border);}
+.btn-ghost-c:hover{background:var(--bg3);}
+.btn-amber-c{background:var(--amber);color:#fff;box-shadow:0 3px 10px rgba(217,119,6,0.2);}
+.btn-amber-c:hover{opacity:0.9;}
+
+/* ── BOOKS ── */
+.book-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r2);overflow:hidden;
+  box-shadow:var(--sh1);transition:all 0.22s;
+}
+.book-card:hover{transform:translateY(-5px);box-shadow:var(--sh2);}
+.book-cover{
+  height:130px;display:flex;align-items:center;justify-content:center;font-size:54px;
+}
+.bc-indigo{background:linear-gradient(135deg,var(--indigo3),var(--indigo4));}
+.bc-rose{background:linear-gradient(135deg,var(--rose2),#fbb6c8);}
+.bc-amber{background:linear-gradient(135deg,var(--amber2),var(--amber3));}
+.bc-teal{background:linear-gradient(135deg,var(--teal3),var(--teal4));}
+.book-body{padding:20px;}
+.book-type{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--ink4);margin-bottom:7px;font-weight:600;
+}
+.book-title{
+  font-family:'Playfair Display',serif;font-size:16px;font-weight:700;
+  color:var(--ink);line-height:1.35;margin-bottom:6px;
+}
+.book-meta{font-size:13px;color:var(--ink3);margin-bottom:4px;font-weight:500;}
+.book-isbn{
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  color:var(--ink4);margin-bottom:16px;
+}
+
+/* ── TOOL CARDS ── */
+.tool-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r2);padding:26px;
+  box-shadow:var(--sh1);transition:all 0.22s;
+}
+.tool-card:hover{transform:translateY(-5px);box-shadow:var(--sh2);}
+.live-pill{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:1px;text-transform:uppercase;font-weight:700;
+  padding:5px 12px;border-radius:5px;margin-bottom:16px;
+  background:var(--green2);color:var(--green);border:1.5px solid #6ee7b7;
+}
+.live-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--green);
+  animation:pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.7);}}
+
+/* ── PUBLICATIONS ── */
+.pub-item{
+  background:#fff;border:1px solid var(--border);
+  border-left:4px solid var(--indigo);
+  border-radius:0 var(--r) var(--r) 0;
+  padding:20px 24px;margin-bottom:12px;
+  display:flex;align-items:flex-start;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+  box-shadow:var(--sh1);transition:all 0.18s;
+}
+.pub-item:hover{transform:translateX(5px);box-shadow:var(--sh2);}
+.pub-item.conf{border-left-color:var(--teal);}
+.pub-item.book-ch{border-left-color:var(--violet);}
+.pub-item.seminar{border-left-color:var(--amber);}
+.pub-title{
+  font-family:'Playfair Display',serif;font-size:16px;font-weight:600;
+  color:var(--ink);margin-bottom:5px;line-height:1.4;
+}
+.pub-venue{font-size:13px;color:var(--ink3);font-style:italic;margin-bottom:8px;font-weight:500;}
+.pub-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+.pub-yr{
+  font-family:'JetBrains Mono',monospace;font-size:12px;
+  color:var(--indigo);font-weight:700;
+}
+.pub-type{
+  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.5px;
+  font-weight:700;padding:3px 9px;border-radius:4px;border:1.5px solid;
+}
+
+/* ── EVENTS ── */
+.event-item{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r);padding:18px 20px;margin-bottom:12px;
+  display:flex;align-items:flex-start;gap:16px;
+  box-shadow:var(--sh1);transition:all 0.18s;
+}
+.event-item:hover{transform:translateY(-3px);box-shadow:var(--sh2);}
+.ebox{
+  flex-shrink:0;width:58px;text-align:center;
+  background:var(--indigo3);border:1.5px solid var(--indigo4);
+  border-radius:10px;padding:10px 6px;
+}
+.ebox-yr{
+  font-family:'JetBrains Mono',monospace;font-size:11px;
+  color:var(--indigo);font-weight:600;line-height:1;
+}
+.ebox-mo{
+  font-family:'Playfair Display',serif;font-size:15px;font-weight:700;
+  color:var(--ink2);
+}
+.einfo{flex:1;}
+.etitle{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px;line-height:1.3;}
+.eorg{font-size:13px;color:var(--ink3);margin-bottom:8px;font-weight:500;}
+.etags{display:flex;gap:6px;flex-wrap:wrap;}
+.etag{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  font-weight:700;padding:3px 9px;border-radius:4px;
+}
+.et-org{background:var(--rose2);color:var(--rose);}
+.et-att{background:var(--indigo3);color:var(--indigo);}
+.et-fdp{background:var(--amber2);color:var(--amber);}
+.et-sem{background:var(--teal3);color:var(--teal2);}
+.et-wkp{background:var(--violet2);color:var(--violet);}
+.et-web{background:var(--green2);color:var(--green);}
+
+/* ── TABS ── */
+.tab-bar{display:flex;gap:6px;margin-bottom:24px;flex-wrap:wrap;}
+.tabbtn{
+  font-size:13px;font-weight:700;
+  padding:9px 20px;border-radius:9px;
+  border:2px solid var(--border2);
+  background:#fff;color:var(--ink3);
+  cursor:pointer;transition:all 0.18s;
+}
+.tabbtn:hover{border-color:var(--indigo);color:var(--indigo);}
+.tabbtn.on{background:var(--indigo);color:#fff;border-color:var(--indigo);}
+.tab-pane{display:none;}
+.tab-pane.on{display:block;animation:fadeUp 0.3s ease both;}
+
+/* ── CONTACT ── */
+.contact-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;
+}
+.contact-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r);padding:22px 18px;text-align:center;
+  cursor:pointer;transition:all 0.2s;text-decoration:none;display:block;
+  box-shadow:var(--sh1);
+}
+.contact-card:hover{
+  border-color:var(--indigo);transform:translateY(-4px);
+  box-shadow:var(--sh3);
+}
+.contact-ico{font-size:28px;margin-bottom:9px;}
+.contact-lbl{
+  font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--ink4);margin-bottom:6px;font-weight:600;
+}
+.contact-val{font-size:14px;font-weight:700;color:var(--indigo);}
+.contact-val.sm{font-size:13px;color:var(--ink2);}
+
+/* ── FOOTER ── */
+.footer{
+  background:var(--ink);color:#c8cedf;
+  padding:44px 48px 28px;
+  border-top:3px solid var(--indigo);
+}
+.footer-inner{max-width:1100px;margin:0 auto;}
+.footer-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:32px;
+}
+.footer-name{
+  font-family:'Playfair Display',serif;font-size:22px;font-weight:700;
+  color:#fff;margin-bottom:8px;
+}
+.footer-inst{font-size:13px;color:#8892b0;line-height:1.7;margin-bottom:16px;}
+.footer-lic{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:'JetBrains Mono',monospace;font-size:10px;color:#8892b0;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);
+  padding:7px 14px;border-radius:6px;font-weight:500;
+}
+.footer-col-h{
+  font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;color:#8892b0;margin-bottom:16px;
+}
+.footer-a{
+  display:block;font-size:14px;color:#8892b0;
+  text-decoration:none;margin-bottom:9px;
+  font-weight:500;transition:color 0.18s;
+}
+.footer-a:hover{color:var(--indigo4);}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.07);padding-top:20px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;
+}
+.footer-copy{
+  font-family:'JetBrains Mono',monospace;font-size:12px;color:#5a6285;
+}
+.footer-copy strong{color:#8892b0;}
+
+/* ── TOAST ── */
+.toast{
+  position:fixed;bottom:28px;right:28px;
+  background:#fff;color:var(--ink);
+  border:1px solid var(--border2);border-left:4px solid var(--indigo);
+  font-size:14px;font-weight:600;
+  padding:14px 20px;border-radius:11px;
+  box-shadow:var(--sh2);
+  z-index:9999;transform:translateY(80px);opacity:0;
+  transition:all 0.32s cubic-bezier(0.34,1.56,0.64,1);
+}
+.toast.show{transform:translateY(0);opacity:1;}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.fade{animation:fadeUp 0.55s ease both;}
+.d1{animation-delay:0.05s}.d2{animation-delay:0.11s}.d3{animation-delay:0.17s}
+.d4{animation-delay:0.23s}.d5{animation-delay:0.29s}.d6{animation-delay:0.35s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .nav{padding:0 20px;}
+  .nav-links{display:none;}
+  .hero{padding:48px 20px 40px;}
+  .hero-inner{grid-template-columns:1fr;gap:36px;}
+  .hero-card{max-width:320px;}
+  .statsbar{padding:16px 20px;}
+  .main{padding:36px 20px 80px;}
+  .footer-grid{grid-template-columns:1fr;gap:28px;}
+  .footer{padding:36px 20px 24px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav">
+  <a class="nav-logo" href="#home">
+    <div class="nav-mono">VK</div>
+    <div>
+      <div class="nav-name">Dr. Venkata Krishnaveni</div>
+      <div class="nav-sub">CS Faculty · IQAC Coordinator · OER</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <button class="nav-a active" onclick="navTo('home')">Home</button>
+    <button class="nav-a" onclick="navTo('lab-manuals')">Lab Manuals</button>
+    <button class="nav-a" onclick="navTo('books')">Books</button>
+    <button class="nav-a" onclick="navTo('tools')">Tools</button>
+    <button class="nav-a" onclick="navTo('publications')">Publications</button>
+    <button class="nav-a" onclick="navTo('events')">Events</button>
+    <button class="nav-a" onclick="navTo('contact')">Contact</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-decor1"></div>
+  <div class="hero-decor2"></div>
+  <div class="hero-inner">
+    <div class="fade">
+      <div class="hero-tag">Ph.D · University of Hyderabad · 2022</div>
+      <h1 class="hero-h1">Dr. Venkata<br/><em>Krishnaveni</em> Chennuru</h1>
+      <div class="hero-role">Lecturer — Department of Computer Science</div>
+      <div class="hero-inst">SKR &amp; SKR Government College for Women (Autonomous) · Kadapa, Andhra Pradesh</div>
+      <div class="hero-chips">
+        <span class="chip chip-indigo">Artificial Intelligence</span>
+        <span class="chip chip-amber">Machine Learning</span>
+        <span class="chip chip-violet">Data Mining</span>
+        <span class="chip chip-rose">IQAC Coordinator</span>
+        <span class="chip chip-teal">NAAC · NIRF</span>
+        <span class="chip chip-green">Open Education</span>
+      </div>
+      <div class="hero-btns">
+        <a class="btn-hero-primary" href="#lab-manuals">📥 Free Lab Manuals</a>
+        <a class="btn-hero-outline" href="#publications">📄 Publications</a>
+        <a class="btn-hero-teal" href="#tools">⚡ Live Tools</a>
+      </div>
+    </div>
+
+    <div class="hero-card fade d2">
+      <div class="hc-avatar">👩‍💻</div>
+      <div class="hc-name">Dr. C. V. Krishnaveni</div>
+      <div class="hc-dept">Dept. of Computer Science</div>
+      <div class="hc-grid">
+        <div class="hc-stat"><div class="hc-n">15+</div><div class="hc-l">Publications</div></div>
+        <div class="hc-stat"><div class="hc-n">3</div><div class="hc-l">Patents</div></div>
+        <div class="hc-stat"><div class="hc-n">5</div><div class="hc-l">Lab Manuals</div></div>
+        <div class="hc-stat"><div class="hc-n">7+</div><div class="hc-l">Yrs Teaching</div></div>
+      </div>
+      <a class="hc-orcid" href="https://orcid.org/0000-0003-2209-483X" target="_blank">
+        🆔 ORCID: 0000-0003-2209-483X
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS BAR ══ -->
+<section class="statsbar">
+  <div class="statsbar-inner">
+    <div class="scard si fade d1">
+      <div class="sc-ico">🧪</div><div class="sc-n">5</div>
+      <div class="sc-l">Lab Solution Manuals</div>
+    </div>
+    <div class="scard st fade d2">
+      <div class="sc-ico">⚡</div><div class="sc-n">4</div>
+      <div class="sc-l">Live Tools on GitHub</div>
+    </div>
+    <div class="scard sa fade d3">
+      <div class="sc-ico">📚</div><div class="sc-n">4</div>
+      <div class="sc-l">Books Published</div>
+    </div>
+    <div class="scard sr fade d4">
+      <div class="sc-ico">📝</div><div class="sc-n">15+</div>
+      <div class="sc-l">Research Publications</div>
+    </div>
+    <div class="scard sv fade d5">
+      <div class="sc-ico">🏛️</div><div class="sc-n">3</div>
+      <div class="sc-l">Patents Filed</div>
+    </div>
+    <div class="scard sg fade d6">
+      <div class="sc-ico">🎓</div><div class="sc-n">40+</div>
+      <div class="sc-l">FDPs &amp; Events</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAIN ══ -->
+<main class="main">
+
+  <!-- OER Banner -->
+  <div class="oer-band fade">
+    <div class="oer-ico">🌍</div>
+    <div>
+      <div class="oer-h">Open Educational Resources — Free for All Learners</div>
+      <div class="oer-p">All materials are published under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>. Free to use, share, and adapt for educational purposes with attribution. Developed at SKR &amp; SKR GCW(A), Kadapa, Andhra Pradesh, India.</div>
+    </div>
+  </div>
+
+  <!-- ══ LAB MANUALS ══ -->
+  <section class="section" id="lab-manuals">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">🧪</span> Lab Solution Manuals <span class="sec-badge">5 Manuals</span></div>
+    </div>
+    <div class="grid3">
+
+      <div class="card fade d1">
+        <span class="card-ico">🐍</span>
+        <span class="cbadge cb-indigo">Python Lab</span>
+        <div class="card-title">Python Programming Lab Solution Manual</div>
+        <div class="card-sub">B.Sc. Computer Science · II Year</div>
+        <div class="card-desc">Complete step-by-step solutions for all Python lab exercises. Covers basics, OOP, file handling, exception handling, and mini projects.</div>
+        <div class="card-tags"><span class="tag">50+ Programs</span><span class="tag">With Output</span><span class="tag">Viva Q&amp;A</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Python Lab Manual — Download starting!')">📥 Download PDF</button>
+          <button class="btn-c btn-outline-c" onclick="toast('Viewing online...')">👁 View Online</button>
+        </div>
+      </div>
+
+      <div class="card tt fade d2">
+        <span class="card-ico">🗄️</span>
+        <span class="cbadge cb-teal">DBMS Lab</span>
+        <div class="card-title">Database Management System Lab Manual</div>
+        <div class="card-sub">B.Sc. Computer Science · III Year</div>
+        <div class="card-desc">SQL queries, PL/SQL programs, triggers, procedures, and functions with complete solutions. Oracle and MySQL compatible.</div>
+        <div class="card-tags"><span class="tag">40+ Queries</span><span class="tag">PL/SQL</span><span class="tag">Normalization</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('DBMS Lab Manual — Download starting!')">📥 Download PDF</button>
+          <button class="btn-c btn-outline-c" onclick="toast('Viewing online...')">👁 View Online</button>
+        </div>
+      </div>
+
+      <div class="card tv fade d3">
+        <span class="card-ico">🌲</span>
+        <span class="cbadge cb-violet">DS Lab</span>
+        <div class="card-title">Data Structures Lab Solution Manual</div>
+        <div class="card-sub">B.Sc. Computer Science · II Year</div>
+        <div class="card-desc">Arrays, linked lists, stacks, queues, trees, graphs — all algorithms with C programs, traced examples, and complexity analysis.</div>
+        <div class="card-tags"><span class="tag">45+ Programs</span><span class="tag">C Language</span><span class="tag">Algorithm Trace</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('DS Lab Manual — Download starting!')">📥 Download PDF</button>
+          <button class="btn-c btn-outline-c" onclick="toast('Viewing online...')">👁 View Online</button>
+        </div>
+      </div>
+
+      <div class="card ta fade d4">
+        <span class="card-ico">🌐</span>
+        <span class="cbadge cb-amber">Web Lab</span>
+        <div class="card-title">Web Technology Lab Manual</div>
+        <div class="card-sub">B.Sc. Computer Science · III Year</div>
+        <div class="card-desc">HTML, CSS, JavaScript, PHP exercises with complete source code and browser output screenshots. Beginner-friendly explanations.</div>
+        <div class="card-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">PHP</span><span class="tag">Screenshots</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Web Lab Manual — Download starting!')">📥 Download PDF</button>
+          <button class="btn-c btn-outline-c" onclick="toast('Viewing online...')">👁 View Online</button>
+        </div>
+      </div>
+
+      <div class="card tr fade d5">
+        <span class="card-ico">🤖</span>
+        <span class="cbadge cb-rose">AI &amp; ML Lab</span>
+        <div class="card-title">Artificial Intelligence &amp; ML Lab Manual</div>
+        <div class="card-sub">B.Sc. Computer Science · III Year</div>
+        <div class="card-desc">Search algorithms, ML models using Python &amp; scikit-learn, neural networks basics. Complete practical record solutions.</div>
+        <div class="card-tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">30+ Programs</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('AI Lab Manual — Download starting!')">📥 Download PDF</button>
+          <button class="btn-c btn-outline-c" onclick="toast('Viewing online...')">👁 View Online</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ BOOKS ══ -->
+  <section class="section" id="books">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">📚</span> Books &amp; eBooks <span class="sec-badge">4 Publications</span></div>
+    </div>
+    <div class="tab-bar">
+      <button class="tabbtn on" onclick="switchTab('books','ebooks',this)">📱 eBooks (2)</button>
+      <button class="tabbtn" onclick="switchTab('books','paperbacks',this)">📖 Paperback (2)</button>
+    </div>
+
+    <div id="books-ebooks" class="tab-pane on">
+      <div class="grid4">
+        <div class="book-card">
+          <div class="book-cover bc-indigo">📘</div>
+          <div class="book-body">
+            <div class="book-type">eBook · Free Download · 2025</div>
+            <div class="book-title">Python Programming for Beginners — A Complete Guide</div>
+            <div class="book-meta">Venkata Krishnaveni Chennuru · 155 pages</div>
+            <div class="book-isbn">Co-authored with T V Sai Sudharshini</div>
+            <div class="card-acts" style="margin-top:14px;">
+              <button class="btn-c btn-primary-c" onclick="toast('eBook downloading!')">📥 Free Download</button>
+              <button class="btn-c btn-ghost-c" onclick="toast('Link copied!')">🔗 Share</button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover bc-rose">📗</div>
+          <div class="book-body">
+            <div class="book-type">eBook · Free Download · 2026</div>
+            <div class="book-title">Applications of Artificial Intelligence Lab Solution Manual</div>
+            <div class="book-meta">Venkata Krishnaveni Chennuru · 2026</div>
+            <div class="book-isbn">Maths, Physics, Chemistry &amp; Sciences</div>
+            <div class="card-acts" style="margin-top:14px;">
+              <button class="btn-c btn-primary-c" onclick="toast('eBook downloading!')">📥 Free Download</button>
+              <button class="btn-c btn-ghost-c" onclick="toast('Link copied!')">🔗 Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="books-paperbacks" class="tab-pane">
+      <div class="grid4">
+        <div class="book-card">
+          <div class="book-cover bc-amber">📙</div>
+          <div class="book-body">
+            <div class="book-type">Paperback · Published · 2026</div>
+            <div class="book-title">Mastering Excel: Beginner, Intermediate, and Advanced Levels</div>
+            <div class="book-meta">Venkata Krishnaveni Chennuru · 2026</div>
+            <div class="book-isbn">ISBN: (in press)</div>
+            <div class="card-acts" style="margin-top:14px;">
+              <button class="btn-c btn-amber-c" onclick="toast('Redirecting to publisher...')">🛒 Buy Online</button>
+              <button class="btn-c btn-ghost-c" onclick="toast('Preview opening...')">👁 Preview</button>
+            </div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-cover bc-teal">📕</div>
+          <div class="book-body">
+            <div class="book-type">Paperback · Published · 2024</div>
+            <div class="book-title">Information and Communication Technology — Life Skill Course</div>
+            <div class="book-meta">Venkata Krishnaveni Chennuru · 2024 · pp. 127–149</div>
+            <div class="book-isbn">Life Skill Course Vol. 1</div>
+            <div class="card-acts" style="margin-top:14px;">
+              <button class="btn-c btn-amber-c" onclick="toast('Redirecting to publisher...')">🛒 Buy Online</button>
+              <button class="btn-c btn-ghost-c" onclick="toast('Preview opening...')">👁 Preview</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TOOLS ══ -->
+  <section class="section" id="tools">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">⚡</span> Live Tools &amp; Playgrounds <span class="sec-badge">4 Live</span></div>
+    </div>
+    <div class="grid2">
+
+      <div class="tool-card fade d1">
+        <div class="live-pill"><div class="live-dot"></div>Live on GitHub</div>
+        <div class="card-title">🎓 NIRF Ranking Assistant</div>
+        <div class="card-desc">AI-powered chatbot for NIRF guidance — covers all 5 parameters (TLR, RP, GO, OI, PR), data collection, score improvement, and submission portal. Powered by Google Gemini. Free to use.</div>
+        <div class="card-tags"><span class="tag">Gemini AI</span><span class="tag">Arts &amp; Science</span><span class="tag">Universities</span><span class="tag">Free</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Opening NIRF Assist...')">🚀 Open Tool</button>
+          <button class="btn-c btn-outline-c" onclick="toast('GitHub opened!')">⭐ GitHub</button>
+        </div>
+      </div>
+
+      <div class="tool-card fade d2">
+        <div class="live-pill"><div class="live-dot"></div>Live on GitHub</div>
+        <div class="card-title">📋 IQAC Department Data Collector</div>
+        <div class="card-desc">Web app for IQAC coordinators to collect NAAC, NIRF, AQAR data from all departments. Live dashboard, department status tracking, auto-reminders, Excel export. Zero cost.</div>
+        <div class="card-tags"><span class="tag">NAAC · NIRF · AQAR</span><span class="tag">Firebase</span><span class="tag">Dashboard</span><span class="tag">Free</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Opening IQAC Collector...')">🚀 Open Tool</button>
+          <button class="btn-c btn-outline-c" onclick="toast('GitHub opened!')">⭐ GitHub</button>
+        </div>
+      </div>
+
+      <div class="tool-card fade d3">
+        <div class="live-pill" style="background:var(--indigo3);color:var(--indigo);border-color:var(--indigo4);">
+          <div class="live-dot" style="background:var(--indigo);"></div>Playground
+        </div>
+        <div class="card-title">🐍 Python Code Playground</div>
+        <div class="card-desc">Interactive Python playground for students. Write, run, and test Python code directly in browser. Includes starter templates for all lab exercises. Beginner friendly.</div>
+        <div class="card-tags"><span class="tag">Browser-based</span><span class="tag">Lab Exercises</span><span class="tag">Beginner Friendly</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Opening Python Playground...')">🚀 Try Now</button>
+          <button class="btn-c btn-outline-c" onclick="toast('GitHub opened!')">⭐ GitHub</button>
+        </div>
+      </div>
+
+      <div class="tool-card fade d4">
+        <div class="live-pill" style="background:var(--violet2);color:var(--violet);border-color:#c4b5fd;">
+          <div class="live-dot" style="background:var(--violet);"></div>Playground
+        </div>
+        <div class="card-title">🌲 Data Structures Visualizer</div>
+        <div class="card-desc">Interactive visualizations for sorting algorithms, trees, graphs, and more. Watch algorithms execute step by step. Perfect for understanding complex concepts visually.</div>
+        <div class="card-tags"><span class="tag">Visual Learning</span><span class="tag">Step-by-Step</span><span class="tag">10+ Algorithms</span></div>
+        <div class="card-acts">
+          <button class="btn-c btn-primary-c" onclick="toast('Opening DS Visualizer...')">🚀 Try Now</button>
+          <button class="btn-c btn-outline-c" onclick="toast('GitHub opened!')">⭐ GitHub</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ PUBLICATIONS ══ -->
+  <section class="section" id="publications">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">📝</span> Publications <span class="sec-badge">15+ Works</span></div>
+      <div class="sec-filters">
+        <button class="filt on" onclick="filterPubs('all',this)">All</button>
+        <button class="filt" onclick="filterPubs('journal',this)">Journals</button>
+        <button class="filt" onclick="filterPubs('conf',this)">Conferences</button>
+        <button class="filt" onclick="filterPubs('book-ch',this)">Book Chapters</button>
+      </div>
+    </div>
+    <div id="pub-list">
+
+      <div class="pub-item" data-type="journal">
+        <div style="flex:1;">
+          <div class="pub-title">Simulated Annealing Based Undersampling (SAUS): A Hybrid Multi-Objective Optimization Method to Tackle Class Imbalance</div>
+          <div class="pub-venue">Applied Intelligence · Vol. 52 · pp. 2092–2110 · Springer</div>
+          <div class="pub-row">
+            <span class="pub-yr">2022</span>
+            <span class="pub-type" style="background:var(--indigo3);color:var(--indigo);border-color:var(--indigo4);">JOURNAL · SCOPUS</span>
+            <span class="tag">Co-authored</span>
+          </div>
+        </div>
+        <a class="btn-c btn-outline-c" href="https://doi.org/10.1007/s10489-021-02804-0" target="_blank">📄 View</a>
+      </div>
+
+      <div class="pub-item conf" data-type="conf">
+        <div style="flex:1;">
+          <div class="pub-title">Solid Waste Classification Using Transformer Model</div>
+          <div class="pub-venue">Lecture Notes in Networks and Systems · Vol. 1229 LNNS · pp. 284–291</div>
+          <div class="pub-row">
+            <span class="pub-yr">2025</span>
+            <span class="pub-type" style="background:var(--teal3);color:var(--teal2);border-color:var(--teal4);">CONFERENCE</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening paper...')">📄 View</button>
+      </div>
+
+      <div class="pub-item conf" data-type="conf">
+        <div style="flex:1;">
+          <div class="pub-title">Text Recognition from Images Using Deep Learning Techniques</div>
+          <div class="pub-venue">Smart Innovation Systems and Technologies · Vol. 315 · pp. 265–279</div>
+          <div class="pub-row">
+            <span class="pub-yr">2023</span>
+            <span class="pub-type" style="background:var(--teal3);color:var(--teal2);border-color:var(--teal4);">CONFERENCE</span>
+            <span class="tag">Scopus Indexed</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening paper...')">📄 View</button>
+      </div>
+
+      <div class="pub-item conf" data-type="conf">
+        <div style="flex:1;">
+          <div class="pub-title">COVID-19 Detection Using Deep Learning</div>
+          <div class="pub-venue">Advances in Intelligent Systems and Computing · Vol. 1375 · pp. 263–269</div>
+          <div class="pub-row">
+            <span class="pub-yr">2021</span>
+            <span class="pub-type" style="background:var(--teal3);color:var(--teal2);border-color:var(--teal4);">CONFERENCE</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening paper...')">📄 View</button>
+      </div>
+
+      <div class="pub-item" data-type="journal">
+        <div style="flex:1;">
+          <div class="pub-title">Telecom Churn Prediction using Machine Learning</div>
+          <div class="pub-venue">World Journal of Advanced Engineering Technology and Sciences · Vol. 7 · pp. 087–096</div>
+          <div class="pub-row">
+            <span class="pub-yr">2022</span>
+            <span class="pub-type" style="background:var(--indigo3);color:var(--indigo);border-color:var(--indigo4);">JOURNAL</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening paper...')">📄 View</button>
+      </div>
+
+      <div class="pub-item book-ch" data-type="book-ch">
+        <div style="flex:1;">
+          <div class="pub-title">MahalCUSFilter: A Hybrid Undersampling Method to Improve Minority Classification Rate of Imbalanced Datasets</div>
+          <div class="pub-venue">Lecture Notes in Computer Science (LNAI) · Vol. 10682 · pp. 43–53 · Springer</div>
+          <div class="pub-row">
+            <span class="pub-yr">2017</span>
+            <span class="pub-type" style="background:var(--violet2);color:var(--violet);border-color:#c4b5fd;">BOOK CHAPTER</span>
+            <span class="tag">Springer LNAI</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening chapter...')">📄 View</button>
+      </div>
+
+      <div class="pub-item" data-type="journal">
+        <div style="flex:1;">
+          <div class="pub-title">Machine Unlearning: A Comprehensive Survey and Unified Framework</div>
+          <div class="pub-venue">Zenodo · 2026</div>
+          <div class="pub-row">
+            <span class="pub-yr">2026</span>
+            <span class="pub-type" style="background:var(--amber2);color:var(--amber);border-color:var(--amber3);">PREPRINT</span>
+          </div>
+        </div>
+        <button class="btn-c btn-outline-c" onclick="toast('Opening paper...')">📄 View</button>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <button class="btn-hero-outline" style="font-size:14px;padding:11px 26px;" onclick="toast('Loading all 15+ publications...')">📋 View All Publications →</button>
+    </div>
+  </section>
+
+  <!-- ══ EVENTS ══ -->
+  <section class="section" id="events">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">🎓</span> FDPs, Seminars &amp; Workshops <span class="sec-badge">40+ Events</span></div>
+      <div class="sec-filters">
+        <button class="filt on" onclick="filterEvents('all',this)">All</button>
+        <button class="filt" onclick="filterEvents('org',this)">Organized</button>
+        <button class="filt" onclick="filterEvents('att',this)">Attended</button>
+        <button class="filt" onclick="filterEvents('fdp',this)">FDPs</button>
+        <button class="filt" onclick="filterEvents('web',this)">Webinars</button>
+      </div>
+    </div>
+
+    <div id="event-list">
+      <div class="event-item" data-t="org fdp">
+        <div class="ebox"><div class="ebox-yr">2025</div><div class="ebox-mo">Dec</div></div>
+        <div class="einfo">
+          <div class="etitle">FDP on AI Tools for Higher Education — Google Gemini, NotebookLM &amp; Veo</div>
+          <div class="eorg">Organized at SKR &amp; SKR GCW(A), Kadapa · 5 Days · 60 Participants</div>
+          <div class="etags"><span class="etag et-org">Organized</span><span class="etag et-fdp">FDP</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="org">
+        <div class="ebox"><div class="ebox-yr">2025</div><div class="ebox-mo">Oct</div></div>
+        <div class="einfo">
+          <div class="etitle">National Seminar on Open Educational Resources in Computer Science</div>
+          <div class="eorg">Organized at SKR &amp; SKR GCW(A) in collaboration with IQAC · 2 Days</div>
+          <div class="etags"><span class="etag et-org">Organized</span><span class="etag et-sem">Seminar</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="att fdp">
+        <div class="ebox"><div class="ebox-yr">2025</div><div class="ebox-mo">Aug</div></div>
+        <div class="einfo">
+          <div class="etitle">AICTE ATAL Academy — FDP on Python for Data Science</div>
+          <div class="eorg">ATAL Academy Online · 1 Week · Certificate Awarded</div>
+          <div class="etags"><span class="etag et-att">Attended</span><span class="etag et-fdp">FDP</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="att web">
+        <div class="ebox"><div class="ebox-yr">2025</div><div class="ebox-mo">Jun</div></div>
+        <div class="einfo">
+          <div class="etitle">Webinar on NAAC Accreditation 2.0 — New Framework &amp; DVV Process</div>
+          <div class="eorg">NAAC Bangalore · Online · 500+ Participants Nationally</div>
+          <div class="etags"><span class="etag et-att">Attended</span><span class="etag et-web">Webinar</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="org">
+        <div class="ebox"><div class="ebox-yr">2025</div><div class="ebox-mo">Mar</div></div>
+        <div class="einfo">
+          <div class="etitle">Workshop on NIRF Data Preparation for Affiliated Colleges</div>
+          <div class="eorg">Organized at District Level · Kadapa · 45 IQAC Coordinators attended</div>
+          <div class="etags"><span class="etag et-org">Organized</span><span class="etag et-wkp">Workshop</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="att fdp">
+        <div class="ebox"><div class="ebox-yr">2024</div><div class="ebox-mo">Nov</div></div>
+        <div class="einfo">
+          <div class="etitle">Google for Education Certified Educator Training Program</div>
+          <div class="eorg">Google India · Online · Level 1 &amp; Level 2 Certified</div>
+          <div class="etags"><span class="etag et-att">Attended</span><span class="etag et-fdp">FDP</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="att">
+        <div class="ebox"><div class="ebox-yr">2024</div><div class="ebox-mo">Sep</div></div>
+        <div class="einfo">
+          <div class="etitle">Workshop on Research Methodology &amp; Statistical Tools for Social Science</div>
+          <div class="eorg">Yogi Vemana University, Kadapa · 3 Days</div>
+          <div class="etags"><span class="etag et-att">Attended</span><span class="etag et-wkp">Workshop</span></div>
+        </div>
+      </div>
+      <div class="event-item" data-t="org web">
+        <div class="ebox"><div class="ebox-yr">2024</div><div class="ebox-mo">Jul</div></div>
+        <div class="einfo">
+          <div class="etitle">Webinar on Free AI Tools for Students — ChatGPT, Gemini, Copilot</div>
+          <div class="eorg">Organized for B.Sc. CS Students · Online · 200+ Students</div>
+          <div class="etags"><span class="etag et-org">Organized</span><span class="etag et-web">Webinar</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <button class="btn-hero-outline" style="font-size:14px;padding:11px 26px;" onclick="toast('Loading all 40+ events...')">📅 View All Events →</button>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section" id="contact">
+    <div class="sec-head">
+      <div class="sec-ttl"><span class="sec-ico">📬</span> Contact &amp; Profiles</div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-ico">🏛️</div>
+        <div class="contact-lbl">Institution</div>
+        <div class="contact-val sm">SKR &amp; SKR GCW(A)<br/>Kadapa, Andhra Pradesh</div>
+      </div>
+      <a class="contact-card" href="mailto:cvkrishnaveni19@gmail.com">
+        <div class="contact-ico">📧</div>
+        <div class="contact-lbl">Email</div>
+        <div class="contact-val" style="font-size:12px;">cvkrishnaveni19@gmail.com</div>
+      </a>
+      <a class="contact-card" href="https://github.com/vkchennuru" target="_blank">
+        <div class="contact-ico">💻</div>
+        <div class="contact-lbl">GitHub</div>
+        <div class="contact-val">github.com/vkchennuru</div>
+      </a>
+      <a class="contact-card" href="https://orcid.org/0000-0003-2209-483X" target="_blank">
+        <div class="contact-ico">🆔</div>
+        <div class="contact-lbl">ORCID</div>
+        <div class="contact-val" style="font-size:12px;">0000-0003-2209-483X</div>
+      </a>
+      <a class="contact-card" href="https://vidwan.inflibnet.ac.in/profile/76511" target="_blank">
+        <div class="contact-ico">🔬</div>
+        <div class="contact-lbl">Vidwan Profile</div>
+        <div class="contact-val">View Profile →</div>
+      </a>
+      <div class="contact-card" onclick="toast('Search: Venkata Krishnaveni Chennuru on Google Scholar')" style="cursor:pointer;">
+        <div class="contact-ico">🎓</div>
+        <div class="contact-lbl">Google Scholar</div>
+        <div class="contact-val">View Publications →</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Dr. Venkata Krishnaveni Chennuru</div>
+        <div class="footer-inst">
+          Lecturer, Dept. of Computer Science &amp; IQAC Coordinator<br/>
+          SKR &amp; SKR Government College for Women (Autonomous)<br/>
+          Kadapa, Andhra Pradesh, India — 516001
+        </div>
+        <div class="footer-lic">🌍 CC BY-NC 4.0 · Free OER · Copyright © 2026</div>
+      </div>
+      <div>
+        <div class="footer-col-h">Quick Links</div>
+        <a class="footer-a" href="#lab-manuals">🧪 Lab Solution Manuals</a>
+        <a class="footer-a" href="#books">📚 Books &amp; eBooks</a>
+        <a class="footer-a" href="#tools">⚡ Live Tools</a>
+        <a class="footer-a" href="#publications">📝 Publications</a>
+        <a class="footer-a" href="#events">🎓 FDPs &amp; Events</a>
+      </div>
+      <div>
+        <div class="footer-col-h">OER License</div>
+        <a class="footer-a" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0 License</a>
+        <a class="footer-a" href="#">Free to use with attribution</a>
+        <a class="footer-a" href="#">Not for commercial use</a>
+        <a class="footer-a" href="https://github.com/vkchennuru" target="_blank">GitHub Repository</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">Copyright © 2026 · <strong>Venkata Krishnaveni Chennuru</strong> · vkchennuru.github.io</div>
+      <div class="footer-copy">Built with ❤️ for Open Education · GitHub Pages</div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+function navTo(id){
+  document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+  document.querySelectorAll('.nav-a').forEach(a=>a.classList.remove('active'));
+  event.target.classList.add('active');
+}
+function switchTab(section,tab,btn){
+  document.querySelectorAll(`[id^="${section}-"]`).forEach(p=>p.classList.remove('on'));
+  document.getElementById(`${section}-${tab}`).classList.add('on');
+  btn.closest('.tab-bar').querySelectorAll('.tabbtn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+function filterPubs(type,btn){
+  document.querySelectorAll('#pub-list .pub-item').forEach(c=>{
+    c.style.display=(type==='all'||c.dataset.type===type)?'flex':'none';
+  });
+  btn.closest('.sec-filters').querySelectorAll('.filt').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+function filterEvents(type,btn){
+  document.querySelectorAll('#event-list .event-item').forEach(c=>{
+    c.style.display=(type==='all'||c.dataset.t?.includes(type))?'flex':'none';
+  });
+  btn.closest('.sec-filters').querySelectorAll('.filt').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+window.addEventListener('scroll',()=>{
+  const ids=['home','lab-manuals','books','tools','publications','events','contact'];
+  let cur='home';
+  ids.forEach(id=>{
+    const el=document.getElementById(id);
+    if(el&&window.scrollY>=el.offsetTop-80) cur=id;
+  });
+  document.querySelectorAll('.nav-a').forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('onclick')?.includes(`'${cur}'`));
+  });
+});
+let tt;
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.classList.add('show');
+  clearTimeout(tt);
+  tt=setTimeout(()=>t.classList.remove('show'),3000);
+}
+</script>
+</body>
+</html>
